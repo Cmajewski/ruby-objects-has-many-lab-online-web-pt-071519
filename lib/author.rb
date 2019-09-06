@@ -1,5 +1,5 @@
 class Author
-  attr_reader :name
+  attr_reader :name, :posts, :add_post
 
   def initialize (name)
     @name=name
@@ -14,8 +14,8 @@ class Author
   end
 
   def add_post_by_title (title)
-    new_post=Post.new(title)
+    new_post=Post.new (title)
     add_post(new_post)
   end
-  
+
 end

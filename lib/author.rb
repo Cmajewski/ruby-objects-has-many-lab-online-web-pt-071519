@@ -6,7 +6,7 @@ class Author
   end
 
   def posts
-    Post.all?.select {|posts| posts.author==self}
+    Post.all.select {|posts| posts.author==self}
   end
 
   def add_post (post)
@@ -19,6 +19,6 @@ class Author
   end
 
   def self.post_count
-    Post.all?.count
+    Post.all.count
   end
 end

@@ -21,4 +21,5 @@ class Post
     else
     @author.name
   end
+  end
 end

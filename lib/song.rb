@@ -6,7 +6,6 @@ class Song
 
   def initialize (name)
     @name=name
-
     save
   end
 
@@ -14,7 +13,7 @@ class Song
     @@all<<self
   end
 
-  def self.all?
+  def self.all
     @@all
   end
 
